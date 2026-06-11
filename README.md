@@ -55,12 +55,12 @@ Instead of relying solely on FIFA rankings or Elo ratings, the engine computes a
 *   **Macroeconomic Factors (4%)**: Log-scaled GDP per capita (2%) and Log-scaled Population (2%) — implementing diminishing returns of population size.
 *   **Environmental Factors (5%)**: Host Advantage (2% - USA, Mexico, Canada) and Climate/Temperature Affinity (3%). Temperature affinity is modeled using a non-linear Gaussian bell curve centered at the optimal physical performance temperature of 14°C (57°F):
 
-$$\text{norm\_temp} = e^{-\frac{(\text{avg\_temp} - 14.0)^2}{100.0}}$$
+$$\text{norm\_temp} = e^{-\frac{(\text{avg_temp} - 14.0)^2}{100.0}}$$
 
 ### 3. Knockout Shootout Damping
 Penalty shootouts are high-variance events. To prevent elite teams from smoothly cruising through the bracket without facing knockout tail-risk, the engine applies a **shootout damping factor** (`0.25`) that compresses rating differences and models shootouts closer to a coin flip:
 
-$$\text{pen\_prob} = 0.5 + (\text{base\_prob} - 0.5) \times 0.25$$
+$$\text{pen\_prob} = 0.5 + (\text{base_prob} - 0.5) \times 0.25$$
 
 ---
 
