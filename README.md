@@ -1,5 +1,7 @@
 # 🏆 2026 FIFA World Cup Prediction Engine
 
+🚀 **[Try the live dashboard](https://petrescu-worldcup.streamlit.app)** · 📝 [Post-mortem: I Predicted the World Cup... Kind Of](https://9numbers0.substack.com/p/i-predicted-the-world-cup-kind-of)
+
 A professional-grade, multi-factor Monte Carlo simulation engine that predicts outcomes for the expanded 48-team 2026 FIFA World Cup. 
 
 The project bridges the gap between football intuition and quantitative model design, integrating **Poisson-distributed goal scoring** with **macroeconomic and environmental risk factors** (derived from Joachim Klement's econometric models) and a reactive dashboard built in **Streamlit**.
